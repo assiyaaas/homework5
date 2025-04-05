@@ -1,8 +1,7 @@
-
-public class MarkerStyle {
-    private final String icon;
-    private final String color;
-    private final String labelStyle;
+class MarkerStyle {
+    private String icon;
+    private String color;
+    private String labelStyle;
 
     public MarkerStyle(String icon, String color, String labelStyle) {
         this.icon = icon;
@@ -12,6 +11,6 @@ public class MarkerStyle {
 
     @Override
     public String toString() {
-        return icon + "-" + color + "-" + labelStyle;
+        return "Icon=" + icon + ", Color=" + color + ", LabelStyle=" + labelStyle;
     }
 }
